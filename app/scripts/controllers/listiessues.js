@@ -15,11 +15,13 @@ angular.module('gitProjectApp')
         .then(function(data) {
           $scope.issues = angular.copy(data);
           if ($routeParams.number) {
+            console.log($routeParams);
             $scope.number = $routeParams.number;
             var issue = $scope.issues.filter(function(item) {
               return item.number == $scope.number;
             });
             if (!issue.length) return;
+            console.log('work');
             $scope.issue = issue[0];
           }
         });

@@ -33,13 +33,14 @@ angular
         controllerAs: 'list'
       })
       .when('/:org/:repo/issues/:number', {
-        templateUrl: 'views/comments.html',
-        controller: 'CommentsCtrl',
-        controllerAs: 'comments'
+        templateUrl: 'views/showissues.html',
+        controller: 'ListiessuesctrlCtrl',
+        controllerAs: 'list'
       })
       .otherwise({
         redirectTo: '/'
       });
+        $locationProvider.html5Mode(true);
   })
   .config(['markedProvider', function(markedProvider) {
     markedProvider.setOptions({
