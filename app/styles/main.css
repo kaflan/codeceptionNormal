@@ -22,6 +22,7 @@ a:hover {
 }
 
 .bottom {
+    margin-top: 36px;
     padding-bottom: 20px;
     border-bottom: 1px solid black;
 }
@@ -37,6 +38,7 @@ h1 {
 }
 
 .opacity {
+  margin-left: 50px;
     opacity: .5;
 }
 
@@ -229,9 +231,9 @@ comments {
   content: 'Not comment';
   position: fixed;
   width: 30%;
-  left: 70%;
+  left: 66%;
   height: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 .some{
   position: fixed;
@@ -243,6 +245,7 @@ issues {
     left: 20%;
     overflow-x: hidden;
     height: 100%;
+    width: 45%;
 }
 
 pages {
