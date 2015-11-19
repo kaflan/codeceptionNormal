@@ -1,6 +1,18 @@
-
 body {
   padding: 0;
+}
+.title-fixed{
+      height: 20%;
+      position: fixed;
+      width: 45%;
+      border-bottom: 1px solid black
+}
+.body-fixed{
+top: 25%;
+height: 75%;
+position: fixed;
+width: 45%;
+overflow-y: scroll;
 }
 .img-codeception {
     width: 10%;
@@ -77,10 +89,7 @@ body {
     border-radius: 4px
 }
 
-h1,
-h2 {
-    font-weight: 300
-}
+
 
 .btn-default {
     color: #333;
@@ -206,12 +215,13 @@ h1 {
 
 .no-decoration {
     overflow-y: scroll;
-    height: 100%;
+    height: 75%;
     position: fixed;
     color: #4a1313;
     padding: 0;
     margin: 0;
     width: 20%;
+    top: 25%;
 }
 
 .issue {
@@ -230,34 +240,33 @@ h1 {
 comments {
   content: 'Not comment';
   position: fixed;
-  width: 30%;
   left: 66%;
-  height: 100%;
-  overflow-x: scroll;
+  height: 55%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-bottom: 5px solid black;
 }
 .some{
   position: fixed;
   width: 80%;
 }
 issues {
-  margin-left: 20px;
+    margin-left: 20px;
     position: fixed;
     left: 20%;
-    overflow-x: hidden;
     height: 100%;
     width: 45%;
 }
 
 pages {
     position: fixed;
-    padding: 10%;
-    top: 65%;
+    top: 10%;
     left: 13.5%;
 }
 
 github {
-    position: absolute;
-    right: 45%;
+    position:fixed;
+    left: 3%;
     height: 20%;
 }
 

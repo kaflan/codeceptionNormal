@@ -37,6 +37,11 @@ angular
         controller: 'ListiessuesctrlCtrl',
         controllerAs: 'list'
       })
+      .when('/write-comment', {
+        templateUrl: 'views/write-comment.html',
+        controller: 'WriteCommentCtrl',
+        controllerAs: 'writeComment'
+      })
       .otherwise({
         redirectTo: '/'
       });
