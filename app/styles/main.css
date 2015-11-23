@@ -245,6 +245,12 @@ comments {
   overflow-x: hidden;
   overflow-y: scroll;
   border-bottom: 5px solid black;
+  width: 34%;
+}
+write-comment {
+  position: fixed;
+  left: 68%;
+  top: 65%;
 }
 .some{
   position: fixed;

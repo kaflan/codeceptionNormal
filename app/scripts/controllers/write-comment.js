@@ -8,10 +8,11 @@
  * Controller of the gitProjectApp
  */
 angular.module('gitProjectApp')
-  .controller('WriteCommentCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('WriteCommentCtrl', function ($scope, writeComment) {
+    $scope.comment;
+    $scope.commentPush = function(){
+      
+    };
+    $scope.admin = true;
+    writeComment;
   });

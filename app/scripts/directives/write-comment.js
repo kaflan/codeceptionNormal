@@ -9,10 +9,9 @@
 angular.module('gitProjectApp')
   .directive('writeComment', function () {
     return {
-      template: '<div></div>',
+      templateUrl: 'views/write-comment.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the writeComment directive');
-      }
+      controller: 'WriteCommentCtrl',
+      controllerAs: 'write'
     };
   });

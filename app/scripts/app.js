@@ -37,15 +37,13 @@ angular
         controller: 'ListiessuesctrlCtrl',
         controllerAs: 'list'
       })
-      .when('/write-comment', {
-        templateUrl: 'views/write-comment.html',
-        controller: 'WriteCommentCtrl',
-        controllerAs: 'writeComment'
-      })
       .otherwise({
         redirectTo: '/'
       });
-        $locationProvider.html5Mode(true);
+      $locationProvider.html5Mode({
+                 enabled: true,
+                 requireBase: false
+          });
   })
   .config(['markedProvider', function(markedProvider) {
     markedProvider.setOptions({
