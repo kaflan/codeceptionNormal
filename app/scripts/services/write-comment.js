@@ -8,7 +8,7 @@
  * Service in the gitProjectApp.
  */
 angular.module('gitProjectApp')
-  .service('writeComment', function($cookies, $http) {
+  .service('writeComment', function($http) {
     return {
       query: function(token, comment) {
         var urlick = 'https://api.github.com/repos/:owner/:repo/issues/:number/comments?access_token=' + token;

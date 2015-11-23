@@ -1,3 +1,8 @@
 <a ng-href="/auth/github" ng-click="authentication()" target="_self">
     <i class="fa fa-5x fa-github"></i>
 </a>
+<div class="" ng-hide="userLog">
+  <h4>{{user.name}}</h4>
+  <img ng-src="{{}}" alt="{{}}" />
+  <a ng-href="/logout" ng-click="logOut()"> Log out</a>
+</div>

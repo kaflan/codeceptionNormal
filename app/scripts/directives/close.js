@@ -11,7 +11,7 @@ angular.module('gitProjectApp')
     return {
       template: '<input type="button"   value="Close issues" ng-click="closeRepo()">',
       restrict: 'E',
-      controller: 'CloseCtrl',
-      controllerAs: 'close'
+      controller: 'WriteCommentCtrl',
+      controllerAs: 'write'
     };
   });

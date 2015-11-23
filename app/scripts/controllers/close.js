@@ -9,5 +9,5 @@
  */
 angular.module('gitProjectApp')
   .controller('CloseCtrl', function ($scope, close) {
-
+      
   });
