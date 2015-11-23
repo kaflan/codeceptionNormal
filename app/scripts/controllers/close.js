@@ -8,10 +8,6 @@
  * Controller of the gitProjectApp
  */
 angular.module('gitProjectApp')
-  .controller('CloseCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('CloseCtrl', function ($scope, close) {
+
   });
