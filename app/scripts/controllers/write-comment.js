@@ -9,11 +9,12 @@
  */
 angular.module('gitProjectApp')
   .controller('WriteCommentCtrl', function ($scope, writeComment, $cookies, close) {
-    var exemple = $cookies.getAll();
-
+    var profile = $cookies.get('profile');
+    var token = $cookies.get('token');
+    // JSON.parse(profile)
     $scope.comment;
     $scope.commentPush = function(){
-      console.log(exemple);
+      console.log(token, profile);
     };
     $scope.admin = true;
     writeComment;

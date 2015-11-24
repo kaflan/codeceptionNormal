@@ -411,9 +411,9 @@ module.exports = function (grunt) {
         'copy:styles'
       ],
       dist: [
-        'copy:styles',
-        'imagemin',
-        'svgmin'
+        'copy:styles'
+        // 'imagemin',
+        // 'svgmin'
       ]
     },
 
@@ -452,8 +452,8 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'postcss',
-    'connect:test',
-    'karma'
+    'connect:test'
+    // 'karma'
   ]);
 
   grunt.registerTask('build', [
