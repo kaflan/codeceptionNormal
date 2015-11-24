@@ -220,7 +220,7 @@ module.exports = function (grunt) {
             }
           }
       }
-    }, 
+    },
 
     // Renames files for browser caching purposes
     filerev: {
@@ -470,8 +470,8 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'filerev',
-    'usemin',
-    'htmlmin'
+    'usemin'
+    // 'htmlmin'
   ]);
 
   grunt.registerTask('default', [

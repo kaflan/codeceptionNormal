@@ -248,9 +248,13 @@ comments {
   width: 34%;
 }
 write-comment {
-  position: fixed;
-  left: 68%;
-  top: 65%;
+right: 0%;
+bottom: 0%;
+height: 10%;
+overflow: scroll;
+min-height: 150px;
+width: 32%;
+    position: fixed;
 }
 .some{
   position: fixed;
