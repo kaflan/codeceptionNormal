@@ -14,7 +14,7 @@ angular.module('gitProjectApp')
     // JSON.parse(profile)
     $scope.comment;
     $scope.commentPush = function(){
-      console.log(token, profile);
+      console.log(token, JSON.parse(profile));
     };
     $scope.admin = true;
     writeComment;
